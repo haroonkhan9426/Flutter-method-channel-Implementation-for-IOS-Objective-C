@@ -15,12 +15,15 @@ static NSString *const SHARE_CHANNEL = @"foo";
     
     [shareChannel setMethodCallHandler:^(FlutterMethodCall *call, FlutterResult result) {
         NSLog(@"Welcome to IOS");
-        if ([@"shareFile" isEqualToString:call.method]) {
-           //Code here
-            
+        if ([@"ShowLocationAndNavigate" isEqualToString:call.method]) {
+        //Show Location and Navigate
+            NSLog(@"Show Location And Navigate");
+        }else if([@"ShowMultipleLocations" isEqualToString:call.method]){
+        //Show Multiple Locations
+            NSLog(@"Show Multiple Locations");
         }
-    }];
-    
+    }
+     ];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
