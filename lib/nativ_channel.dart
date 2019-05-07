@@ -21,7 +21,6 @@ class NativeChannel extends StatelessWidget{
         task , {"message": _tempData, "attractionType": _attractionType});
     print('@_showLocationOnMaps: Message sent to Native module');
   }
-
   //Function to handle the communication through method channel
   Future<dynamic> _handleMethod(MethodCall call) async {
     switch (call.method) {
