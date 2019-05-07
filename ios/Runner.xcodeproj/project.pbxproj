@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076F227A227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 076F2279227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m */; };
+		076F227D227DCDCA007804C2 /* MultipleMarkersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 076F227C227DCDCA007804C2 /* MultipleMarkersVC.m */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		2D5378261FAA1A9400D5DBA9 /* flutter_assets in Resources */ = {isa = PBXBuildFile; fileRef = 2D5378251FAA1A9400D5DBA9 /* flutter_assets */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
@@ -38,6 +40,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		076F2278227DCDAD007804C2 /* ShowMarkerAndNavigateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMarkerAndNavigateVC.h; sourceTree = "<group>"; };
+		076F2279227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowMarkerAndNavigateVC.m; sourceTree = "<group>"; };
+		076F227B227DCDCA007804C2 /* MultipleMarkersVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleMarkersVC.h; sourceTree = "<group>"; };
+		076F227C227DCDCA007804C2 /* MultipleMarkersVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultipleMarkersVC.m; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
 		2D5378251FAA1A9400D5DBA9 /* flutter_assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = flutter_assets; path = Flutter/flutter_assets; sourceTree = SOURCE_ROOT; };
@@ -90,7 +96,6 @@
 				9740EEB11CF90186004384FC /* Flutter */,
 				97C146F01CF9000F007C117D /* Runner */,
 				97C146EF1CF9000F007C117D /* Products */,
-				CF3B75C9A7D2FA2A4C99F110 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +112,10 @@
 			children = (
 				7AFFD8ED1D35381100E5BB4D /* AppDelegate.h */,
 				7AFFD8EE1D35381100E5BB4D /* AppDelegate.m */,
+				076F2278227DCDAD007804C2 /* ShowMarkerAndNavigateVC.h */,
+				076F2279227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m */,
+				076F227B227DCDCA007804C2 /* MultipleMarkersVC.h */,
+				076F227C227DCDCA007804C2 /* MultipleMarkersVC.m */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -168,6 +177,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -234,7 +244,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				978B8F6F1D3862AE00F588F7 /* AppDelegate.m in Sources */,
+				076F227D227DCDCA007804C2 /* MultipleMarkersVC.m in Sources */,
 				97C146F31CF9000F007C117D /* main.m in Sources */,
+				076F227A227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
