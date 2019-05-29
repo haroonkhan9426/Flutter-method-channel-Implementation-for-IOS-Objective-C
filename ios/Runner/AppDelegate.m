@@ -2,6 +2,7 @@
 #include "GeneratedPluginRegistrant.h"
 #include "ShowMarkerAndNavigateVC.h"
 #include "MultipleMarkersVC.h"
+#import "Runner-Swift.h"
 @implementation AppDelegate
 
 static NSString *const SHARE_CHANNEL = @"foo";
@@ -34,7 +35,7 @@ static NSString *const SHARE_CHANNEL = @"foo";
             NSLog(@"Show Location And Navigate");
             @try {
                 UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-                UIViewController *view_from_board = [sb instantiateViewControllerWithIdentifier:@"ShowMarkerAndNavigateVC"];
+                UIViewController *view_from_board = [sb instantiateViewControllerWithIdentifier:@"MapboxVC"];
                 [self.navigationController pushViewController:view_from_board animated:YES];
             }
             @catch (NSException * e) {

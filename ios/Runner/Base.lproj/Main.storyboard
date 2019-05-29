@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="900" y="24"/>
         </scene>
-        <!--Show Marker And NavigateVC-->
+        <!--MapboxVC-->
         <scene sceneID="lTY-xj-YEA">
             <objects>
-                <viewController storyboardIdentifier="ShowMarkerAndNavigateVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Inm-lA-cwI" customClass="ShowMarkerAndNavigateVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapboxVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Inm-lA-cwI" customClass="MapboxVC" customModule="Runner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IS1-XG-w66"/>
                         <viewControllerLayoutGuide type="bottom" id="d7o-9k-G7r"/>
@@ -98,19 +98,15 @@
                                                     <action selector="backButtonPressed:" destination="Inm-lA-cwI" eventType="touchUpInside" id="xJU-z0-qvI"/>
                                                 </connections>
                                             </button>
+                                            <connections>
+                                                <action selector="backButtonPressed:" destination="Inm-lA-cwI" id="rWr-42-46d"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Marker and Nagivate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzI-PZ-fnc">
-                                <rect key="frame" x="33" y="601" width="348" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBb-5y-2QS" customClass="MGLMapView">
-                                <rect key="frame" x="87" y="140" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="766"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>

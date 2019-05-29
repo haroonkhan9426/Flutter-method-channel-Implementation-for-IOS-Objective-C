@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07580FBF229EA6D100CB13C3 /* MapboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07580FBE229EA6D100CB13C3 /* MapboxVC.swift */; };
 		076F227A227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 076F2279227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m */; };
 		076F227D227DCDCA007804C2 /* MultipleMarkersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 076F227C227DCDCA007804C2 /* MultipleMarkersVC.m */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
@@ -41,6 +42,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		07580FBD229EA6D100CB13C3 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
+		07580FBE229EA6D100CB13C3 /* MapboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxVC.swift; sourceTree = "<group>"; };
 		076F2278227DCDAD007804C2 /* ShowMarkerAndNavigateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMarkerAndNavigateVC.h; sourceTree = "<group>"; };
 		076F2279227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowMarkerAndNavigateVC.m; sourceTree = "<group>"; };
 		076F227B227DCDCA007804C2 /* MultipleMarkersVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleMarkersVC.h; sourceTree = "<group>"; };
@@ -89,7 +92,6 @@
 				082328BEE7A3B1D9C38B6D00 /* Pods-Runner.release.xcconfig */,
 				7E55D8CB7233DC72B860298B /* Pods-Runner.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +144,8 @@
 				97C146F11CF9000F007C117D /* Supporting Files */,
 				1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */,
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
+				07580FBE229EA6D100CB13C3 /* MapboxVC.swift */,
+				07580FBD229EA6D100CB13C3 /* Runner-Bridging-Header.h */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -198,6 +202,7 @@
 				TargetAttributes = {
 					97C146ED1CF9000F007C117D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -321,6 +326,7 @@
 				978B8F6F1D3862AE00F588F7 /* AppDelegate.m in Sources */,
 				076F227D227DCDCA007804C2 /* MultipleMarkersVC.m in Sources */,
 				97C146F31CF9000F007C117D /* main.m in Sources */,
+				07580FBF229EA6D100CB13C3 /* MapboxVC.swift in Sources */,
 				076F227A227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
@@ -401,7 +407,9 @@
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = S8QB4VV633;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -417,6 +425,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.iosMapboxIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -529,7 +539,9 @@
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -544,6 +556,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.iosMapboxIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -554,7 +569,9 @@
 			baseConfigurationReference = 7AFA3C8E1D35360C0083082E /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
+				DEFINES_MODULE = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,6 +586,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.iosMapboxIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
