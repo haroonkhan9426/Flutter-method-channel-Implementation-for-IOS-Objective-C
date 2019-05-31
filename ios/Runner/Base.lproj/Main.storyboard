@@ -89,7 +89,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem id="XkO-bp-MWT">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="olC-C8-HBb">
+                                        <barButtonItem key="leftBarButtonItem" style="done" id="olC-C8-HBb">
                                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="14H-vd-vbm">
                                                 <rect key="frame" x="20" y="7" width="34" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -116,6 +116,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="iBb-5y-2QS" id="Xwi-sQ-RMM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fX6-dd-w96" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

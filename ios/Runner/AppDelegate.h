@@ -3,4 +3,7 @@
 
 @interface AppDelegate : FlutterAppDelegate
 @property (nonatomic, strong) UINavigationController *navigationController;
+@property (nonatomic, retain) NSMutableArray *markers;
+
+- (NSMutableArray *) getMarkers;
 @end
