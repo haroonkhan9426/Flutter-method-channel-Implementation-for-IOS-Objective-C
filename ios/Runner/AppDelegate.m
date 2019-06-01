@@ -75,7 +75,7 @@ static NSString *const SHARE_CHANNEL = @"foo";
             NSLog(@"Show Multiple Locations");
             @try {
                 UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-                UIViewController *view_from_board = [sb instantiateViewControllerWithIdentifier:@"MultipleMarkersVC"];
+                UIViewController *view_from_board = [sb instantiateViewControllerWithIdentifier:@"MapBoxNavigationVC"];
                 [self.navigationController pushViewController:view_from_board animated:YES];
             }
             @catch (NSException * e) {

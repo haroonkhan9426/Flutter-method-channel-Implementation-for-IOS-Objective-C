@@ -2,5 +2,6 @@
 platform :ios, '10.0'
 
 target 'Runner' do
-  pod 'Mapbox-iOS-SDK', '~> 5.0'
+  pod 'Mapbox-iOS-SDK', '~> 4.11.0'
+  pod 'MapboxNavigation', '~> 0.33'
 end

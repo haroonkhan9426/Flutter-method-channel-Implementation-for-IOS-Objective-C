@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07580FBF229EA6D100CB13C3 /* MapboxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07580FBE229EA6D100CB13C3 /* MapboxVC.swift */; };
+		07580FC122A25E1C00CB13C3 /* MapBoxNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07580FC022A25E1C00CB13C3 /* MapBoxNavigationVC.swift */; };
 		076F227A227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 076F2279227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m */; };
 		076F227D227DCDCA007804C2 /* MultipleMarkersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 076F227C227DCDCA007804C2 /* MultipleMarkersVC.m */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		07580FBD229EA6D100CB13C3 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
 		07580FBE229EA6D100CB13C3 /* MapboxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxVC.swift; sourceTree = "<group>"; };
+		07580FC022A25E1C00CB13C3 /* MapBoxNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxNavigationVC.swift; sourceTree = "<group>"; };
 		076F2278227DCDAD007804C2 /* ShowMarkerAndNavigateVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowMarkerAndNavigateVC.h; sourceTree = "<group>"; };
 		076F2279227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowMarkerAndNavigateVC.m; sourceTree = "<group>"; };
 		076F227B227DCDCA007804C2 /* MultipleMarkersVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultipleMarkersVC.h; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				07580FBE229EA6D100CB13C3 /* MapboxVC.swift */,
 				07580FBD229EA6D100CB13C3 /* Runner-Bridging-Header.h */,
+				07580FC022A25E1C00CB13C3 /* MapBoxNavigationVC.swift */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				F503350D1FFFA4107E492F2C /* [CP] Embed Pods Frameworks */,
+				937E07B7D686AE35CD6E1DE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -277,6 +281,208 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		937E07B7D686AE35CD6E1DE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources.sh",
+				"${PODS_ROOT}/MapboxMobileEvents/MapboxMobileEvents/Resources/logger.html",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ar.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ar.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/Contents.json",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Base.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Base.lproj/Navigation.storyboard",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Base.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/bg.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ca.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ca.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/da.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/da.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/da.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/de.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/de.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/de.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/en.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/es.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/es.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/es.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/fa.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/fr.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/fr.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/fr.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/he.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/he.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/he.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/hu.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/hu.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/hu.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/it.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ja.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ja.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ja.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ko.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ko.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ko.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/lt.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/nl.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/pt-BR.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/pt-BR.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/pt-PT.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/pt-PT.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/pt-PT.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ru.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ru.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ru.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/sl.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/sv.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/sv.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/sv.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/uk.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/uk.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/uk.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/vi.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/vi.lproj/Localizable.stringsdict",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/vi.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/zh-Hans.lproj/Localizable.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/zh-Hans.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/zh-Hant.lproj/Navigation.strings",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/carplay",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/close.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/exit-left.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/exit-right.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback-closed-road.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback-confusing-directions.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback-gps.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback-map-error.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback-no-turn-allowed.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback-traffic.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback-wrong-directions.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback_car_crash.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback_hazard.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback_other.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback_road_closed.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback_routing.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/feedback_turn_not_allowed.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/location.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/minus.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/overview.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/pan-map.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/plus.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/recenter.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/report_checkmark.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/reroute-sound.dataset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/scroll.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/search-monocle.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/star.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/triangle.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/volume_off.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets/volume_up.imageset",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ar.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Assets.xcassets",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/Base.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/bg.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ca.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/da.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/de.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/en.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/es.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/fa.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/fr.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/he.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/hu.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/it.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ja.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ko.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/lt.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/nl.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/pt-BR.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/pt-PT.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/ru.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/sl.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/sv.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/uk.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/vi.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/zh-Hans.lproj",
+				"${PODS_ROOT}/MapboxNavigation/MapboxNavigation/Resources/zh-Hant.lproj",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/logger.html",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizable.strings",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Navigation.strings",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Contents.json",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Navigation.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizable.stringsdict",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/carplay",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/close.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/exit-left.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/exit-right.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback-closed-road.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback-confusing-directions.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback-gps.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback-map-error.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback-no-turn-allowed.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback-traffic.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback-wrong-directions.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_car_crash.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_hazard.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_other.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_road_closed.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_routing.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/feedback_turn_not_allowed.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/location.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/minus.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/overview.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pan-map.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/plus.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/recenter.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/report_checkmark.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/reroute-sound.dataset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/scroll.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/search-monocle.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/star.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/triangle.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/volume_off.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/volume_up.imageset",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ar.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Assets.car",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Base.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/bg.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ca.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/da.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/de.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/es.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fa.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fr.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/he.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/hu.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/it.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ja.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ko.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lt.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/nl.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pt-BR.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pt-PT.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ru.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sl.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/sv.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/uk.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/vi.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hant.lproj",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9740EEB61CF901F6004384FC /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,15 +506,19 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks.sh",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/CD548FF3-ECB4-31D0-8E4F-AE55F70E287F.bcsymbolmap",
-				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/70E1902C-569B-3192-A297-3622F9745C20.bcsymbolmap",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/889347F4-EFF6-36C7-A3A2-222C76C4A2E7.bcsymbolmap",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/B1A29F9B-DC14-3A52-ACD0-1BDF517FE210.bcsymbolmap",
+				"${PODS_ROOT}/MapboxNavigationNative/MapboxNavigationNative.framework",
+				"${PODS_ROOT}/MapboxNavigationNative/MapboxNavigationNative.framework.dSYM",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
-				"${BUILT_PRODUCTS_DIR}/CD548FF3-ECB4-31D0-8E4F-AE55F70E287F.bcsymbolmap",
-				"${BUILT_PRODUCTS_DIR}/70E1902C-569B-3192-A297-3622F9745C20.bcsymbolmap",
+				"${BUILT_PRODUCTS_DIR}/889347F4-EFF6-36C7-A3A2-222C76C4A2E7.bcsymbolmap",
+				"${BUILT_PRODUCTS_DIR}/B1A29F9B-DC14-3A52-ACD0-1BDF517FE210.bcsymbolmap",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxNavigationNative.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/MapboxNavigationNative.framework.dSYM",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,6 +537,7 @@
 				97C146F31CF9000F007C117D /* main.m in Sources */,
 				07580FBF229EA6D100CB13C3 /* MapboxVC.swift in Sources */,
 				076F227A227DCDAD007804C2 /* ShowMarkerAndNavigateVC.m in Sources */,
+				07580FC122A25E1C00CB13C3 /* MapBoxNavigationVC.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
