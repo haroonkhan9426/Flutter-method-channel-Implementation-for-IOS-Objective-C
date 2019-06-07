@@ -45,5 +45,11 @@
 	<string>pk.eyJ1IjoiaGFyb29ua2hhbjk0MjYiLCJhIjoiY2pybTVvaGM2MGVmODRicGo2YWZqMjk5aCJ9.2x-WpTVFJ6jEx7MrRvRbZg</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Shows your location on the map and helps improve OpenStreetMap.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Used for voice instructions during navigation on mapbox navigation.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
 </dict>
 </plist>
